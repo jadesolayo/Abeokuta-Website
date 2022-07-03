@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.header-cont {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.header {
+  display: flex;
+  background-color: #0d3501;
+  padding-top: 0.5rem;
+  padding: 1.8rem 1rem;
+}
+.logo-cont {
+  width: 20%;
+  position: absolute;
+  top: 0.3rem;
+}
+.logo-name-cont {
+  display: inline-block;
+  margin-top: -0.5rem;
+  margin-left: 5px;
+}
+.logo-name {
+  color: white;
+  padding-left: 6rem;
+  font-size: 28px;
+}
+.menu {
+  margin-left: 29rem;
+}
+a {
+  text-decoration: none;
+}
+.nav-link {
+  padding-left: 4rem;
+  color: white;
+  font-size: 18px;
+}
+.nav-link:hover {
+  color: #f6f415;
+  font-size: 20px;
+}
+
+.abk-text-cont {
+  margin-top: 6rem;
+  text-align: center;
+}
+.abk-text {
+  color: #0d3501;
+  font-size: 55px;
+  font-weight: bold;
+}
+.about-abk-img {
+  width: 99%;
+  margin: auto;
+  margin-top: 2.3rem;
+  display: flex;
+}
+.img1-cont {
+  width: 35%;
+  height: 40vh;
+  margin-top: -2rem;
+}
+.img1 {
+  margin-top: 1rem;
+}
+.abt-abk-text {
+  width: 40%;
+  margin-top: 1.3rem;
+}
+.abt-abk {
+  margin-left: 1rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0d3501;
+  text-align: justify;
+}
+.abk-btn {
+  background-color: #0d3501;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  border-radius: 15px;
+  display: block;
+}
+.abk-btn:hover {
+  color: #f6f415;
+  cursor: pointer;
+}
+.oba-img-cont {
+  width: 25%;
+  margin-top: -1.8rem;
+  margin-left: 1rem;
+}
+.slider {
+  margin-top: 3.5rem;
+}
+.img2-cont {
+  width: 98%;
+  margin: auto;
+}
+.img2 {
+  width: 100%;
+}
+.caption-text {
+  color: #0d3501;
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+#caption-text {
+  color: #0d3501;
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.cultureheading {
+  color: #0d3501;
+  font-size: 55px;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
+/* Culture-section */
+.culture {
+  display: flex;
+  width: 98%;
+  margin: auto;
+}
+.culture-txt {
+  color: #0d3501;
+  font-size: 18px;
+  line-height: 28px;
+  color: #0d3501;
+  padding-top: 5rem;
+  width: 50%;
+  text-align: justify;
+  padding-right: 20px;
+}
+.img3-cont {
+  width: 50%;
+}
+.img3 {
+  width: 100%;
+  margin-top: 15px;
+}
+/* Tourist Attraction Section */
+.heading {
+  color: #0d3501;
+  font-size: 55px;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tourist-attraction {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin-top: 2rem;
+  margin: 1rem auto;
+}
+.img4,
+.img5 {
+  margin-left: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.img5:hover .caption-fade {
+  display: block !important;
+}
+.img4:hover .caption-fade {
+  display: block !important;
+}
+.caption {
+  display: block;
+  text-align: center;
+  color: #0d3501;
+  font-weight: 800;
+  padding-left: 12px;
+  padding-top: 5px;
+}
+.caption-fade {
+  background-color: #f6f215ce;
+  color: #0d3501;
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  padding-top: 4.5rem;
+  padding-right: 5px;
+  font-size: 2rem;
+  animation-name: drop;
+  animation-duration: 0.5s;
+  display: none;
+  text-align: center;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.prominent-people {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin: 1rem auto;
+}
+.img5 {
+  margin-left: 2.5rem;
+}
+.cont .img5:hover {
+  filter: blur(2px);
+}
+.caption {
+  display: block;
+  text-align: center;
+  color: #0d3501;
+  font-weight: 800;
+  padding-left: 12px;
+  padding-top: 5px;
+}
+/* Footer Styles */
+
+.footer {
+  width: 99%;
+  min-height: 35vh;
+  background-color: #0d3501;
+  margin: auto;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+.footer-cont {
+  display: flex;
+}
+.section-1 {
+  margin-left: 20px;
+  padding-top: 20px;
+  width: 20%;
+}
+.footer-logo {
+  width: 30%;
+}
+.tagline {
+  color: white;
+  width: 100%;
+  padding-left: 1rem;
+}
+.about-us-cont,
+.contact-us {
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+}
+h3 {
+  color: #f6f415;
+}
+.about-us-text {
+  color: white;
+  padding-top: 0.3rem;
+}
+.number,
+.email {
+  color: white;
+  padding-top: 0.3rem;
+}
+.section-2 {
+  width: 15%;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+ul {
+  list-style-type: none;
+  padding-top: 0.5rem;
+}
+li {
+  padding-top: 1rem;
+}
+li a {
+  color: white;
+}
+.section-3 {
+  width: 15%;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.section-4 {
+  width: 15%;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.section-5 {
+  width: 20%;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.email {
+  width: 80%;
+  line-height: 25px;
+  margin-top: 0.3rem;
+}
+.subscribe-btn {
+  display: block;
+  background-color: #f6f415;
+  border: none;
+  color: #0d3501;
+  padding: 7px 15px;
+  margin-top: 0.4rem;
+  border-radius: 5px;
+}
+.subscribe-btn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+::placeholder {
+  text-align: center;
+}
+.divider {
+  color: white;
+  margin-top: 1rem;
+}
+/* History Page */
+.article {
+  width: 99%;
+  margin-top: 3rem !important;
+  margin: auto;
+}
+.article-cont {
+  width: 99%;
+  display: flex;
+}
+.story1 {
+  width: 48%;
+}
+.abkimg1 {
+  width: 48%;
+  margin-left: 2.5rem;
+}
+.gallery-section {
+  width: 99%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.abk-heading {
+  color: #0d3501;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.gallery-cont {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin-top: 2rem;
+  margin: 1rem auto;
+}
+/* Festival Page */
+.festival-article,
+.culture-article {
+  width: 98% !important;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.festival-article {
+  width: 98%;
+  margin: auto;
+}
+.list-heading {
+  color: #0d3501;
+  font-size: 30px;
+  font-weight: bold;
+}
+.article-cont {
+  margin-top: 1rem;
+}
+.festival-article-cont {
+  width: 35%;
+  padding-right: 1rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  text-align: justify;
+  margin-left: 2rem;
+}
+.festival-img {
+  width: 63%;
+  margin-left: 2rem;
+}
+.festival-img-cont {
+  display: flex;
+  margin-left: 31rem !important;
+  width: 98%;
+  margin: auto;
+  margin-top: 1rem;
+}
+.festival-img2 {
+  width: 30%;
+  margin-left: 13px;
+}
+.festival-img3 {
+  width: 30%;
+  margin-left: 19px;
+}
+.lisabi {
+  padding-top: 0.5rem;
+}
+.article-wrap {
+  display: flex;
+}
+.culture-notes {
+  width: 40%;
+  padding-right: 1rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  text-align: justify;
+  margin-left: 2rem;
+}
+.culture-img {
+  width: 50%;
+  margin-left: 3rem;
+}
+/* About Styles */
+.about-us {
+  width: 98%;
+  margin: auto;
+}
+.about-wrap {
+  margin-top: 2rem;
+}
+.about-article {
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}
+.location {
+  margin-top: 2rem;
+}
+.location-wrap {
+  display: flex;
+  margin-top: 2rem;
+}
+.write-up {
+  width: 50%;
+  margin-top: 7rem;
+}
+.location {
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 1rem;
+}
+.mapouter{
+  margin-left: 1.5rem;
+}
+/* .cont {
+  position: relative;
+}
+.cont-text {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: capitalize;
+  color: #0d3501;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+}
+.cont:hover .cont-text {
+  display: block;
+} */
